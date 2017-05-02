@@ -1,0 +1,17 @@
+<div class="weather {{weatherClass}} full">
+    <div class="header-container text-center">
+        <h1 class="title">Weather in {{name}}</h1>
+        <h2 class="temp">{{format(temp)}}</h2>
+    </div>
+    <!-- switch between celsius and fahrenheit -->
+    <div class="center">
+        <div class="onoffswitch">
+            <input type="checkbox" class="onoffswitch-checkbox" id="myonoffswitch" value='celsius'
+                   checked='{{isCelcius}}'>
+            <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+    </div>
+</div>

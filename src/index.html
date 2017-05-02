@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Application</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+</head>
+<body>
+<script src="/vendor.bundle.js"></script>
+<script src="/js.bundle.js"></script>
+</body>
+<div id="root">
+</div>
+
+<script id='template' type='text/ractive'>
+  {{#if hasGeo}}
+  <div class="{{formatIcon(icon)}} full">
+    <div class="header-container text-center">
+      <h1 class="title">Weather in {{city}}</h1>
+      <div class="icon">
+        <div class="icon-box">
+          <div class="wi wi-{{formatIcon(icon)}}"></div>
+          <h2 class="temp">{{formatTemp(temp)}}</h2>
+          <span class="desc">{{desc}}</span>
+        </div>
+      </div>
+    </div>
+    <!-- switch between celsius and fahrenheit -->
+    <div class="center">
+      <div class="onoffswitch">
+        <input type="checkbox" class="onoffswitch-checkbox" id="myonoffswitch" value='celsius' checked='{{isCelcius}}'>
+        <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+      </div>
+    </div>
+  </div>
+  {{else}} {{#if loading}}
+  <div class="full loading center"><h2>Loading...<h2></div>
+  {{else}}
+  <div class="no-geo full center"><h1>Sorry you need Geolocation enabled</h1></div>
+  {{/if}} {{/if}}
+</script>
+</html>

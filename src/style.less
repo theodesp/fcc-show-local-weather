@@ -1,0 +1,212 @@
+.weather {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.icon-box {
+  border-radius: 10px;
+  width: 170px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 50px 20px 0px 20px;
+}
+
+.header-container {
+  margin-top: 8rem;
+  .icon {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 70px;
+    line-height: 1em;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.day-sunny {
+  background: url(https://c1.staticflickr.com/4/3817/33052802746_48fea13c78_k.jpg) no-repeat center center fixed;
+  .weather
+}
+
+.night-clear {
+  background: url(https://c1.staticflickr.com/9/8663/16206554535_391f2aad84_h.jpg) no-repeat center center fixed;
+  .weather
+}
+
+.day-cloudy {
+  background: url(https://c1.staticflickr.com/3/2912/14223475415_5900b82b8f_k.jpg) no-repeat center center fixed;
+  .weather
+}
+
+.cloudy {
+  background: url(https://c1.staticflickr.com/8/7420/27304287032_66eebdde97_k.jpg) no-repeat center center fixed;
+  .weather
+}
+
+.rain {
+  background: url(https://c1.staticflickr.com/8/7496/16307630891_afcd331dde_k.jpg) no-repeat center center fixed;
+  .weather
+}
+
+.night-alt-rain {
+  background: url(https://c1.staticflickr.com/2/1646/25639220215_79bc2d8ad3_k.jpg) no-repeat center center fixed;
+  .weather
+}
+
+.thunderstorm {
+  background: url(https://c1.staticflickr.com/4/3777/11981920776_296682ef92_k.jpg) no-repeat center center fixed;
+  .weather
+}
+
+.night-alt-thunderstorm {
+  background: url(https://c1.staticflickr.com/8/7374/13487404485_140a8a3754_k.jpg) no-repeat center center fixed;
+  .weather
+}
+
+.day-snow {
+  background: url(https://c1.staticflickr.com/1/255/33035208556_010c2546d7_k.jpg) no-repeat center center fixed;
+  .weather
+}
+
+.night-alt-snow {
+  background: url(https://c1.staticflickr.com/3/2623/32919794042_6293027a91_k.jpg) no-repeat center center fixed;
+  .weather
+}
+
+.night-alt-snow {
+  background: url(https://c1.staticflickr.com/3/2623/32919794042_6293027a91_k.jpg) no-repeat center center fixed;
+  .weather
+}
+
+.day-fog {
+  background: url(https://c1.staticflickr.com/4/3734/9640336837_24da4b4f5f_h.jpg) no-repeat center center fixed;
+  .weather
+}
+
+.night-fog {
+  background: url(https://c1.staticflickr.com/6/5733/30875523111_1389c7fe4a_k.jpg) no-repeat center center fixed;
+  .weather
+}
+
+h1,
+h2 {
+  font-family: lato, sans-serif;
+  color: white;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9);
+}
+
+.temp {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.loading {
+  background: url(https://c1.staticflickr.com/8/7017/6814132827_9b3ff71761_b.jpg) no-repeat center center fixed;
+  .weather;
+}
+
+.desc {
+  font-size: 2rem;
+}
+
+.no-geo {
+  background: url(https://c1.staticflickr.com/4/3950/15604210811_2f4acfa400_k.jpg) no-repeat center center fixed;
+  .weather;
+}
+
+// input switch
+.onoffswitch {
+  position: relative;
+  margin-top: 1rem;
+  width: 60px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+  display: none;
+}
+
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 19px;
+}
+
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 29px;
+  padding: 0;
+  line-height: 29px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.onoffswitch-inner:before {
+  content: "°C";
+  padding-left: 11px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.onoffswitch-inner:after {
+  content: "°F";
+  padding-right: 11px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  text-align: right;
+}
+
+.onoffswitch-switch {
+  display: block;
+  width: 18px;
+  margin: 5.5px;
+  background: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 22px;
+  border: 1px solid #999999;
+  border-radius: 19px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
